@@ -15,3 +15,8 @@ posts.get("/:id", (req, res) => {
     const id = req.params.id;
     res.send(`Visualizzo il post con id ${id}`);
 });
+
+// Create: Creare un nuovo elemento (store)
+posts.post("/", (req , res) =>{
+    res.send("Creo un nuovo post");
+});
