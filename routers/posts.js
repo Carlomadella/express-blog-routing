@@ -25,3 +25,8 @@ posts.post("/", (req , res) =>{
 posts.put("/:id", (req, res) => {
     res.send(`Modifico completamente il post con id ${req.params.id}`);
 });
+
+// Update: modificare parzialmente un elemento (modify)
+posts.patch("/:id", (req,res) =>{
+    res.send(`Modifico parzialmente il post con id ${req.params.id}`);
+});
