@@ -30,3 +30,8 @@ posts.put("/:id", (req, res) => {
 posts.patch("/:id", (req,res) =>{
     res.send(`Modifico parzialmente il post con id ${req.params.id}`);
 });
+
+// Delete: Eliminare un elemento (destroy)
+posts.delete("/id", (req,res) =>{
+    res.send(`Elimino il post con id ${req.params.id}`);
+});
