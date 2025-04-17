@@ -35,3 +35,7 @@ posts.patch("/:id", (req,res) =>{
 posts.delete("/id", (req,res) =>{
     res.send(`Elimino il post con id ${req.params.id}`);
 });
+
+
+// Esporto il router 
+module.exports = posts;
