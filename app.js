@@ -11,6 +11,9 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 });
 
+// utilizzo il router importato precedentemente
+app.use('/pizzas', pizzasRouter)
+
 app.listen(port, () => {
     console.log(`Server in ascolto alla porta ${3000}`)
 });
