@@ -20,3 +20,8 @@ posts.get("/:id", (req, res) => {
 posts.post("/", (req , res) =>{
     res.send("Creo un nuovo post");
 });
+
+// Update: Modificare interamente un elemento (update)
+posts.put("/:id", (req, res) => {
+    res.send(`Modifico completamente il post con id ${req.params.id}`);
+});
